@@ -21,6 +21,8 @@ class Program
             new { key = "H", x = -6, y = 0, z = 2 },
             new { key = "I", x = -2, y = 0, z = 6 },
             new { key = "J", x = -6, y = 0, z = 6 },
+            new { key = "X", x = -10, y = 0, z = -6 },
+            new { key = "Y", x = -10, y = 0, z = -2 },
         };
 
         var links_source = new[] {
@@ -36,11 +38,13 @@ class Program
             new { source = "G", target = "I" },
             new { source = "H", target = "J" },
             new { source = "I", target = "J" },
+            new { source = "X", target = "Y" },
         };
 
         var players_source = new[] {
             new { name = "daichi", pos = "A" },
-            new { name = "takahiro", pos = "B" },
+            new { name = "takahiro", pos = "J" },
+            new { name = "koudai", pos = "X" },
         };
         /* testdata */
 

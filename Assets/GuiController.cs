@@ -18,7 +18,7 @@ public class GuiController : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Box(new Rect(Screen.width - 110, 10, 100, 90), "Players");
+        GUI.Box(new Rect(Screen.width - 110, 10, 100, 120), "Players");
         if (GUI.Button(new Rect(Screen.width - 100, 40, 80, 20), "Player1"))
         {
             MainController.current.OnButtonClick("daichi");
@@ -26,6 +26,10 @@ public class GuiController : MonoBehaviour
         if (GUI.Button(new Rect(Screen.width - 100, 70, 80, 20), "Player2"))
         {
             MainController.current.OnButtonClick("takahiro");
+        }
+        if (GUI.Button(new Rect(Screen.width - 100, 100, 80, 20), "Player3"))
+        {
+            MainController.current.OnButtonClick("koudai");
         }
     }
 }
