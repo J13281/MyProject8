@@ -11,16 +11,31 @@ class Program
     {
         /* testdata */
         var points_source = new[] {
-            new { key = "A", x = 2, y = 0, z = -4 },
-            new { key = "B", x = -4, y = 0, z = -4 },
-            new { key = "C", x = 4, y = 0, z = 1 },
-            new { key = "D", x = -2, y = 0, z = 1 },
+            new { key = "A", x = 6, y = 0, z = -6 },
+            new { key = "B", x = 2, y = 0, z = -6 },
+            new { key = "C", x = 6, y = 0, z = -2 },
+            new { key = "D", x = 2, y = 0, z = -2 },
+            new { key = "E", x = -2, y = 0, z = -2 },
+            new { key = "F", x = 2, y = 0, z = 2 },
+            new { key = "G", x = -2, y = 0, z = 2 },
+            new { key = "H", x = -6, y = 0, z = 2 },
+            new { key = "I", x = -2, y = 0, z = 6 },
+            new { key = "J", x = -6, y = 0, z = 6 },
         };
 
         var links_source = new[] {
-            new { source = "C", target = "A" },
-            new { source = "A", target = "D" },
-            new { source = "D", target = "B" },
+            new { source = "A", target = "B" },
+            new { source = "A", target = "C" },
+            new { source = "B", target = "D" },
+            new { source = "C", target = "D" },
+            new { source = "D", target = "E" },
+            new { source = "D", target = "F" },
+            new { source = "E", target = "G" },
+            new { source = "F", target = "G" },
+            new { source = "G", target = "H" },
+            new { source = "G", target = "I" },
+            new { source = "H", target = "J" },
+            new { source = "I", target = "J" },
         };
 
         var players_source = new[] {
