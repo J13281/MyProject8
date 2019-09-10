@@ -36,7 +36,7 @@ class MainController : MonoBehaviour
             obj.transform.position = item.Value;
         }
 
-        current = new WaitState("daichi");
+        current = new PlayerChangeState("daichi");
     }
 
     public void Update()
