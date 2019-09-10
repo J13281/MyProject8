@@ -33,9 +33,11 @@ class WaitState : StateBase
         }
     }
 
-    public override void OnButtonClick(string s)
+    public override void OnButtonClick(string name)
     {
-        var nextPlayer = name == "daichi" ? "takahiro" : "daichi";
-        Transition(new PlayerChangeState(nextPlayer));
+        if (this.name != name)
+        {
+            Transition(new PlayerChangeState(name));
+        }
     }
 }
