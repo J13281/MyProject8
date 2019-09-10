@@ -4,6 +4,8 @@ using UnityEngine;
 
 class MainController : MonoBehaviour
 {
+    public static Vector3 cameraOffset = new Vector3(0, 8, 4);
+
     public static Dictionary<string, Vector3> points;
     public static Dictionary<string, HashSet<string>> links;
     public static Dictionary<string, string> playerPositions;

@@ -26,6 +26,9 @@ class MoveState : StateBase
     public override void Update()
     {
         var diff = target - player.transform.position;
+
+        Camera.main.transform.position = player.transform.position + MainController.cameraOffset;
+
         animator.SetFloat("speed", diff.sqrMagnitude);
         if (0.01 < diff.sqrMagnitude)
         {
